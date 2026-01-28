@@ -3,13 +3,11 @@ class SumUntilZero {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double total = 0.0;
-        double num;
-        System.out.println("Enter numbers (0 to stop):");
-        num = sc.nextDouble();
+        double num = sc.nextDouble();
         while (num != 0) {
             total = total + num;
             num = sc.nextDouble();
         }
-        System.out.println("Total sum = " + total);
+        System.out.println(total);
     }
 }
